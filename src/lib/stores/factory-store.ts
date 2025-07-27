@@ -11,10 +11,10 @@ interface TokenConfig {
 }
 
 interface VestingConfig {
-  beneficiary: string;
+  beneficiary: `0x${string}`;
   amount: string;
-  cliff: number; // seconds
-  duration: number; // seconds
+  cliff: bigint; // seconds
+  duration: bigint; // seconds
   revocable: boolean;
 }
 

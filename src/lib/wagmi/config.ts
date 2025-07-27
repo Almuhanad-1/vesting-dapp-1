@@ -11,11 +11,17 @@ if (!FACTORY_CONTRACT_ADDRESS) {
 }
 
 // Wagmi configuration with RainbowKit
+// export const config = getDefaultConfig({
+//   appName: "ERC20 Vesting Factory",
+//   projectId: process.env.NEXT_PUBLIC_WALLET_CONNECT_PROJECT_ID!,
+//   chains: [sepolia],
+//   ssr: true, // Enable SSR for Next.js
+// });
 export const config = getDefaultConfig({
-  appName: "ERC20 Vesting Factory",
-  projectId: process.env.NEXT_PUBLIC_WALLET_CONNECT_PROJECT_ID!,
+  appName: "vesting tokens",
+  projectId: "e93162e11cff686f8588740ac75a5812",
   chains: [sepolia],
-  ssr: true, // Enable SSR for Next.js
+  ssr: true,
 });
 
 // Chain configuration
